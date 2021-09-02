@@ -211,16 +211,14 @@ var injectBranding = () => {
 }
 var globs = {};
 globs.IPLISTEN = '127.0.0.1';
-globs.PORT_LISTEN_DIST = 8085;
+globs.PORT_LISTEN_DIST = 8080;
 var express = require('express');
 var app = express();
 app.use('/', express.static('bundleFiles'));
 app.use(express.static(__dirname));
 app.listen(globs.PORT_LISTEN_DIST, function () {
-    console.log('Now opening your browser to http://localhost:8085/msgetstarted.html'.yellow);
+    console.log('Now opening your browser to http://localhost:8080/msgetstarted.html'.yellow);
 });
 // opn('http://localhost:8085/msgetstarted.html');
 
-// init();
-injectBranding();
-compile();
+// init()
