@@ -216,7 +216,7 @@ var express = require('express');
 const path = require("path");
 
 var app = express();
-app.use('/', express.static('bundleFiles'));
+app.use(express.static("./_dist"));
 app.use(express.static(__dirname));
 
 app.get('*', (req, res) => {
