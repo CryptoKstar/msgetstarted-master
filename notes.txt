@@ -1,0 +1,9 @@
+WebPack development:
+--------------------
+1. npm run dev
+2. open http://localhost:8080
+
+WebPack production:
+--------------------
+1. gulp release
+
