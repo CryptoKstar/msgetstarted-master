@@ -43,12 +43,12 @@ define(['underscore', 'jquery', 'backbone', 'bootstrap', 'backbone.controller', 
             window.pepper = BB.Pepper;
 
             // START_PROTOCOL
-            window.g_protocol = 'https://';
-            // END_PROTOCOL
+			 window.g_protocol =  'https://' 
+			// END_PROTOCOL
 
             // START_MASTER
-            window.g_masterDomain = 'galaxy.signage.me';
-            // END_MASTER
+			 window.g_masterDomain =  'galaxy.signage.me' 
+			// END_MASTER
 
             self.m_buinessModel = new BusinessModel();
 
@@ -61,28 +61,28 @@ define(['underscore', 'jquery', 'backbone', 'bootstrap', 'backbone.controller', 
             require(['LayoutRouter'], function (LayoutRouter) {
 
                 // START_REDIRECT
-                BB.CONSTS.REDIRECT = 'http://www.digitalsignage.com';
-                // END_REDIRECT
+				 BB.CONSTS.REDIRECT = 'undefined' 
+				// END_REDIRECT
 
                 // START_RESELLER
-                BB.CONSTS.RESELLER = 1;
-                // END_RESELLER
+				 BB.CONSTS.RESELLER = '' 
+				// END_RESELLER
 
                 // START_ERI
-                BB.globs['ERI'] = '';
-                // END_ERI
+				 BB.globs['ERI'] = '' 
+				// END_ERI
 
                 // START_CLOUD
-                BB.globs['CLOUD'] = true;
-                // END_CLOUD
+				 BB.globs['CLOUD'] =  
+				// END_CLOUD
 
                 // START_CHAT
-                BB.globs['CHAT'] = 'http://www.digitalsignage.com/_html/live_chat.html';
-                // END_CHAT
+				 BB.globs['CHAT'] = '' 
+				// END_CHAT
 
                 // START_COMPANY
-                BB.globs['COMPANY'] = 'DigitalSignage.com';
-                // END_COMPANY
+				 BB.globs['COMPANY'] = '' 
+				// END_COMPANY
 
                 var LayoutRouter = new LayoutRouter();
                 Backbone.history.start({root: '/msgetstarted/'});
